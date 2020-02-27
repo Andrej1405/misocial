@@ -1,7 +1,19 @@
 /*Обнуление*/
-*{padding: 0; margin: 0; border: 0}
-button {cursor: pointer;}
-h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: inherit;}
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 .top-block {
@@ -12,18 +24,18 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: inherit;}
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 50px 50px 0px 50px;
 }
 
 .header__left-wrapper {
     display: flex;
 }
 
-.header__icon {
+/* .header__icon {
     padding: 50px 0px 0px 50px;
-}
+} */
 
 .header__logo {
-    padding: 64px 0px 0px 115px;
     color: #ffffff;
     font-family: "Maven Pro";
     font-size: 30px;
@@ -35,8 +47,6 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: inherit;}
 
 nav ul{
     display: flex;
-    /* Style for "Home" */
-width: 560px;
 height: 16px;
 color: #ffffff;
 font-family: "Maven Pro";
@@ -54,9 +64,7 @@ nav ul li {
     display: flex;
 }
 
-.header__button {
-    /* Style for "get starte" */
-width: 84px;
+.header__button a {
 height: 10px;
 color: #ffffff;
 font-family: "Maven Pro";
@@ -64,6 +72,43 @@ font-size: 12px;
 font-weight: 700;
 line-height: 32px;
 text-transform: uppercase;
-/* Text style for "get starte" */
 letter-spacing: 0.6px;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 461px;
+    color: #fff;
+    font-family: "Maven Pro";
+    text-align: center;
+}
+
+.content__top-title {
+display: inline-block;
+width: 246px;
+height: 11px;
+font-size: 14px;
+font-weight: 700;
+line-height: 32px;
+text-transform: uppercase;
+letter-spacing: 0.7px;
+margin: 0 0 40px 0px;
+}
+
+.content__title {
+width: 461px;
+height: 79px;
+font-size: 86px;
+font-weight: 500;
+line-height: 72px;
+letter-spacing: -2.42px;
+margin: 0px 0px 22px 0px;
+}
+
+.content__sub {
+width: 373px;
+height: 43px;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
 }
